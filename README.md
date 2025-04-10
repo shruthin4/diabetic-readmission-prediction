@@ -12,17 +12,13 @@ This project aims to predict **30-day hospital readmissions** for diabetic patie
 ```
 Readmission-Prediction-Project/
 ├── README.md
-├── Diabetics_Readmission.docx       # Full project report (19 pages)
+├── Documentation.pdf                # Full project report 
 ├── data/
 │   ├── diabetic_data.csv
 │   └── IDS_mapping.csv
 ├── notebooks/
 │   └── Readmission.ipynb            # End-to-end notebook with code & markdowns
-├── models/
-│   ├── lgbm_model.pkl               # (Optional) Trained model
-│   └── shap_plots/
 ├── images/                          # SHAP and feature importance plots
-├── requirements.txt
 └── LICENSE
 ```
 
@@ -74,11 +70,9 @@ To build an interpretable machine learning model that identifies diabetic patien
 
 ## 📈 SHAP Visual Summary
 
-![SHAP Plot](images/shap_summary.png)
+![SHAP Plot](images/shap
+.png)
 
-## 🧾 Full Project Report
-
-📄 [Read the Full Report (DOCX)](./Diabetics_Readmission.docx)
 
 ## 📦 Installation
 
@@ -96,7 +90,7 @@ pip install -r requirements.txt
 
 **Shruthin Reddy**  
 Master's Student – University of Louisville  
-Email: [your_email@example.com]  
+Email: [shruthinreddysainapuram@gmail.com]  
 
 ## 📌 License
 
