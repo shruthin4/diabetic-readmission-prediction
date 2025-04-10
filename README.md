@@ -1,5 +1,5 @@
 
-# 🏥 Hospital Readmission Risk Predictor (Diabetic Patients)
+# 🏥 Hospital Readmission Prediction using Machine Learning (Diabetic Patients)
 
 ![Python](https://img.shields.io/badge/Language-Python-blue.svg)
 ![Model](https://img.shields.io/badge/Model-LightGBM-success)
