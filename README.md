@@ -16,8 +16,9 @@ Readmission-Prediction-Project/
 ├── data/
 │   ├── diabetic_data.csv
 │   └── IDS_mapping.csv
-├── notebooks/
-│   └── Readmission.ipynb            # End-to-end notebook with code & markdowns
+├── Code.ipynb                     # End-to-end notebook with code & markdowns
+├── requirements.txt               # Requirements
+└── lightgbm_tuned_model.joblib    # Saved model
 ├── images/                          # SHAP and feature importance plots
 └── LICENSE
 ```
