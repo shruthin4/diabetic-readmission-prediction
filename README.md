@@ -1,28 +1,24 @@
 
-# 🏥 Hospital Readmission Risk Predictor (Diabetic Patients)
+# 🏥 Predicting 30-Day Readmission Risk in Diabetic Patients Using Machine Learning
 
 ![Python](https://img.shields.io/badge/Language-Python-blue.svg)
 ![Model](https://img.shields.io/badge/Model-LightGBM-success)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-This project aims to predict **30-day hospital readmissions** for diabetic patients using structured electronic health records (EHR) from the UCI Diabetes dataset. Through advanced data preprocessing, domain-informed feature engineering, class imbalance handling, and machine learning, we developed a robust model with strong recall and explainability.
+This project aims to predict **30-day hospital readmissions** for diabetic patients using health records  from the UCI Diabetes dataset. Through advanced data preprocessing, domain-informed feature engineering, class imbalance handling, and machine learning, I  developed a robust model with strong recall and explainability.
 
 ## 📂 Project Structure
 
 ```
 Readmission-Prediction-Project/
 ├── README.md
-├── Diabetics_Readmission.docx       # Full project report (19 pages)
+├── Documentation.pdf                # Full project report 
 ├── data/
 │   ├── diabetic_data.csv
 │   └── IDS_mapping.csv
 ├── notebooks/
 │   └── Readmission.ipynb            # End-to-end notebook with code & markdowns
-├── models/
-│   ├── lgbm_model.pkl               # (Optional) Trained model
-│   └── shap_plots/
 ├── images/                          # SHAP and feature importance plots
-├── requirements.txt
 └── LICENSE
 ```
 
@@ -72,13 +68,23 @@ To build an interpretable machine learning model that identifies diabetic patien
 - **age_inpatient_interaction** – combined demographic + utilization risk
 - **num_lab_procedures**, **num_medications** – signal patient complexity
 
-## 📈 SHAP Visual Summary
+## 🚨 Real-World Considerations
 
-![SHAP Plot](images/shap_summary.png)
+Although our tuned LightGBM model achieved a **recall of 0.62** and **F1-score of 0.28**, it's important to understand that structured EHR data alone has limitations in predicting real-world outcomes.
 
-## 🧾 Full Project Report
+Several important factors influencing readmission risk are **not captured in this dataset**, such as:
 
-📄 [Read the Full Report (DOCX)](./Diabetics_Readmission.docx)
+- Mental health status or behavioral factors
+- Medication adherence post-discharge
+- Availability of caregiver support at home
+- Environmental or socioeconomic stressors
+- Sudden medical complications or accidents
+
+These limitations explain why precision remained moderate (~18%) despite strong recall. In healthcare, **missing a high-risk patient** can be more costly than flagging a false positive — which is why recall was prioritized in this project.
+
+This model is therefore best used as a **clinical decision support tool** — helping care teams identify and prioritize at-risk patients, while still relying on human expertise for final decisions.
+
+
 
 ## 📦 Installation
 
@@ -96,7 +102,7 @@ pip install -r requirements.txt
 
 **Shruthin Reddy**  
 Master's Student – University of Louisville  
-Email: [your_email@example.com]  
+Email: [shruthinreddysainapuram@gmail.com]  
 
 ## 📌 License
 
