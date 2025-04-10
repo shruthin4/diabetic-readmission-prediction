@@ -1,5 +1,5 @@
 
-# 🏥 Hospital Readmission Prediction using Machine Learning (Diabetic Patients)
+# 🏥 Predicting 30-Day Readmission Risk in Diabetic Patients Using Machine Learning
 
 ![Python](https://img.shields.io/badge/Language-Python-blue.svg)
 ![Model](https://img.shields.io/badge/Model-LightGBM-success)
