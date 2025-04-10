@@ -12,14 +12,15 @@ This project aims to predict **30-day hospital readmissions** for diabetic patie
 ```
 Readmission-Prediction-Project/
 ├── README.md
-├── Documentation.pdf                # Full project report 
+├── Documentation.pdf                # Full project documentation  
 ├── data/
 │   ├── diabetic_data.csv
 │   └── IDS_mapping.csv
+│   └── cleaned_data.csv
 ├── Code.ipynb                     # End-to-end notebook with code & markdowns
 ├── requirements.txt               # Requirements
 └── lightgbm_tuned_model.joblib    # Saved model
-├── images/                          # SHAP and feature importance plots
+├── images/                        # SHAP and feature importance plots
 └── LICENSE
 ```
 
