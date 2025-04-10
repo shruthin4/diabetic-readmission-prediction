@@ -68,11 +68,6 @@ To build an interpretable machine learning model that identifies diabetic patien
 - **age_inpatient_interaction** – combined demographic + utilization risk
 - **num_lab_procedures**, **num_medications** – signal patient complexity
 
-## 📈 SHAP Visual Summary
-
-![SHAP Plot](images/shap
-.png)
-
 
 ## 📦 Installation
 
