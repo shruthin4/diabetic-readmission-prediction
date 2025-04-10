@@ -5,7 +5,7 @@
 ![Model](https://img.shields.io/badge/Model-LightGBM-success)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-This project aims to predict **30-day hospital readmissions** for diabetic patients using structured electronic health records (EHR) from the UCI Diabetes dataset. Through advanced data preprocessing, domain-informed feature engineering, class imbalance handling, and machine learning, we developed a robust model with strong recall and explainability.
+This project aims to predict **30-day hospital readmissions** for diabetic patients using health records  from the UCI Diabetes dataset. Through advanced data preprocessing, domain-informed feature engineering, class imbalance handling, and machine learning, I  developed a robust model with strong recall and explainability.
 
 ## 📂 Project Structure
 
