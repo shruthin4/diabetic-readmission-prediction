@@ -68,6 +68,23 @@ To build an interpretable machine learning model that identifies diabetic patien
 - **age_inpatient_interaction** – combined demographic + utilization risk
 - **num_lab_procedures**, **num_medications** – signal patient complexity
 
+## 🚨 Real-World Considerations
+
+Although our tuned LightGBM model achieved a **recall of 0.62** and **F1-score of 0.28**, it's important to understand that structured EHR data alone has limitations in predicting real-world outcomes.
+
+Several important factors influencing readmission risk are **not captured in this dataset**, such as:
+
+- Mental health status or behavioral factors
+- Medication adherence post-discharge
+- Availability of caregiver support at home
+- Environmental or socioeconomic stressors
+- Sudden medical complications or accidents
+
+These limitations explain why precision remained moderate (~18%) despite strong recall. In healthcare, **missing a high-risk patient** can be more costly than flagging a false positive — which is why recall was prioritized in this project.
+
+This model is therefore best used as a **clinical decision support tool** — helping care teams identify and prioritize at-risk patients, while still relying on human expertise for final decisions.
+
+
 
 ## 📦 Installation
 
