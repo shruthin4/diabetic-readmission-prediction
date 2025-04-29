@@ -1,13 +1,13 @@
 
-# 🏥 Predicting 30-Day Readmission Risk in Diabetic Patients Using Machine Learning
+# Predicting 30-Day Readmission Risk in Diabetic Patients Using Machine Learning
 
 ![Python](https://img.shields.io/badge/Language-Python-blue.svg)
 ![Model](https://img.shields.io/badge/Model-LightGBM-success)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 
 This project aims to predict **30-day hospital readmissions** for diabetic patients using health records  from the UCI Diabetes dataset. Through advanced data preprocessing, domain-informed feature engineering, class imbalance handling, and machine learning, I  developed a robust model with strong recall and explainability.
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Readmission-Prediction-Project/
@@ -24,18 +24,18 @@ Readmission-Prediction-Project/
 └── LICENSE
 ```
 
-## 🎯 Objective
+## Objective
 
 To build an interpretable machine learning model that identifies diabetic patients at risk of hospital readmission within 30 days of discharge.
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 - **Source**: UCI Diabetes 130-US hospitals dataset
 - **Records**: ~100,000 hospital encounters
 - **Features**: Demographics, diagnoses, procedures, medications, and more
 - **Target Variable**: `readmitted` (<30 days vs. not)
 
-## 🧪 Workflow Summary
+## Workflow Summary
 
 1. **Data Cleaning & Preparation**
    - Handled missing values, removed irrelevant features
@@ -53,7 +53,7 @@ To build an interpretable machine learning model that identifies diabetic patien
    - Precision, recall, F1-score, confusion matrix
    - Feature importance & SHAP plots for explainability
 
-## 🧠 Best Model Summary
+## Best Model Summary
 
 | Model                  | Recall | Precision | F1-Score | Accuracy |
 |------------------------|--------|-----------|----------|----------|
@@ -62,7 +62,7 @@ To build an interpretable machine learning model that identifies diabetic patien
 | Logistic Regression    | 0.54   | 0.17      | 0.25     | 0.66     |
 | SMOTE + LightGBM (0.1) | 0.81   | 0.16      | 0.24     | 0.52     |
 
-## 🔍 Key Risk Factors Identified
+## Key Risk Factors Identified
 
 - **number_inpatient** – strongest indicator of future readmission
 - **discharged_to_facility**, **discharged_home** – key discharge destinations
@@ -70,7 +70,7 @@ To build an interpretable machine learning model that identifies diabetic patien
 - **age_inpatient_interaction** – combined demographic + utilization risk
 - **num_lab_procedures**, **num_medications** – signal patient complexity
 
-## 🚨 Real-World Considerations
+## Real-World Considerations
 
 Although our tuned LightGBM model achieved a **recall of 0.62** and **F1-score of 0.28**, it's important to understand that structured EHR data alone has limitations in predicting real-world outcomes.
 
@@ -88,24 +88,22 @@ This model is therefore best used as a **clinical decision support tool** — he
 
 
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## ⚙️ Reproducibility
+## Reproducibility
 
 - Python 3.9+
 - Trained and evaluated using Jupyter Notebook
 - All preprocessing handled via `Pipeline()`
 
-## 🧠 Author
+## Author
 
 **Shruthin Reddy**  
 Master's Student – University of Louisville  
 Email: [shruthinreddysainapuram@gmail.com]  
 
-## 📌 License
 
-This project is licensed under the MIT License.
